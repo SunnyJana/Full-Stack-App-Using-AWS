@@ -14,5 +14,6 @@
 
 ![aws screenshot](Screenshots/deployed_on_eb.png)
 
-
-
+## Credits 
+- [Udacity](https://www.udacity.com/)
+- [Amazon Web Services](https://aws.amazon.com/)
