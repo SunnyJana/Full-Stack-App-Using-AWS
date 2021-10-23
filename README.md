@@ -8,7 +8,6 @@
 
 [Filtered image example](http://projectudagram-env.eba-anw4bmaz.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://www.w3schools.com/w3css/img_lights.jpg)
 
-
 ###### Screenshots of deployment on AWS Elastic beanstalk :
 
 
@@ -17,3 +16,4 @@
 ## Credits 
 - [Udacity](https://www.udacity.com/)
 - [Amazon Web Services](https://aws.amazon.com/)
+'.''
