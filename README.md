@@ -1,4 +1,4 @@
-# Full Stack Apps Using AWS
+# Full Stack App Using AWS
 
 ## Udagram Monolith - FullStack App on AWS
 
