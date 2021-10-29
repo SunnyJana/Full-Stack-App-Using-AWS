@@ -1,6 +1,6 @@
 # Full Stack App Using AWS
 
-## Udagram Monolith - FullStack App on AWS
+## Monolith - FullStack App on AWS
 
 #### Repository Link : https://github.com/SwarnadeepGhosh/Full-Stack-App-Using-AWS
 
@@ -13,8 +13,8 @@
 
 ![aws screenshot](Screenshots/deployed_on_eb.png)
 
-## Credits 
+## Credits 🦖
 - [Udacity](https://www.udacity.com/)
 - [Amazon Web Services](https://aws.amazon.com/)
-'.''
- 
+
+
