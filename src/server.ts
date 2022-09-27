@@ -15,7 +15,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   app.use(bodyParser.json());
 
   app.get("/filteredimage", async (req: Request, res: Response) => {
-    const { image_url: imageUrl } = req.query;
+    const { image_url: imageUrl } = req.query + res.url;
     if (!imageUrl || !isUri(imageUrl)) {
       return res.status(400).send({ auth: false, message: 'Image url is missing or malformed' });
     }
@@ -31,7 +31,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
     res.send("try GET /filteredimage?image_url={{}}")
   } );
   
-    // Start the Server
+    // Starting the express
   app.listen( port, () => {
       console.log( `server running http://localhost:${ port }` );
       console.log( `press CTRL+C to stop server` );
