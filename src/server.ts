@@ -7,9 +7,9 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   // Init the Express application
   const app = express();
-
+  const qs ;
   // Set the network port
-  const port = process.env.PORT || 8082;
+  const port = process.env.PORT || 8083;
   
   // Use the body parser middleware for post requests
   app.use(bodyParser.json());
