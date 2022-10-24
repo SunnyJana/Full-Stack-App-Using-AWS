@@ -20,7 +20,10 @@ export async function filterImageFromURL(inputURL: string): Promise<string>{
             .write(__dirname+outpath, (img)=>{
                 resolve(__dirname+outpath);
             });
-        } catch (InvalidInputException e) {
+        } catch (IOException e) {
+            resolve("Input output error. Please check server")
+        }
+        catch (InvalidInputException e) {
             resolve("Given image is not valid or broken. Please provide proper image")
         } catch (err) {
             resolve("no image found")
