@@ -7,7 +7,6 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   // Init the Express application
   const app = express();
-  const qs ;
   // Set the network port
   const port = process.env.PORT || 8083;
   
@@ -15,7 +14,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   app.use(bodyParser.json());
 
   app.get("/filteredimage", async (req: Request, res: Response) => {
-    const { image_url: imageUrl } = req.query + res.url;
+    const { image_url: imageUrl } = req.query + res.url + res.errorMessage;
     if (!imageUrl || !isUri(imageUrl)) {
       return res.status(400).send({ auth: false, message: 'Image url is missing or malformed' });
     }
@@ -33,7 +32,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   
     // Starting the express
   app.listen( port, () => {
-      console.log( `server running http://localhost:${ port }` );
+      console.log( `please open the live app on : http://localhost:${ port }` );
       console.log( `press CTRL+C to stop server` );
   } );
   
